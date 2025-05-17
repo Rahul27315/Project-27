@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>JTC Bookstore</title>
+<link href="webjars/bootstrap/5.3.5/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<h1 class="text-center">Welcome to Jtcindia!!!</h1>
+<div class="alert alert-primary" role="alert">
+<h2 class="text-center">Latest Books from JTC</h2>
+</div>
+<br>
+<table class="table table-striped table-bordered table-hover" style="font-size:20px">
+<thead class="thead-light">
+<tr>
+<th>Book Id</th>
+<th>Book Name</th>
+<th>Author</th>
+<th>Price</th>
+<th>Publication</th>
+</tr>
+</thead>
+<tbody>
+<tr th:each="mybook:${session.MyBooks}">
+<td th:text="${mybook.bid}"></td>
+<td th:text="${mybook.bname}"></td>
+<td th:text="${mybook.author}"></td>
+<td th:text="${mybook.price}"></td>
+<td th:text="${mybook.publication}"></td>
+<td><button type="button"class="btn btn-success btn-lg">View Book</button></td>
+<td><button type="button"class="btn btn-danger btn-lg">Edit Book</button></td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
