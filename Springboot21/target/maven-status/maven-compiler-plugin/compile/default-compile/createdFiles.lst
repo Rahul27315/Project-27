@@ -1,0 +1,9 @@
+com\jtcindia\springboot\BookController.class
+com\jtcindia\springboot\BookDAO.class
+com\jtcindia\springboot\BookDAOImpl.class
+com\jtcindia\springboot\StartMyBootApp.class
+com\jtcindia\springboot\IndexController.class
+com\jtcindia\springboot\Book.class
+com\jtcindia\springboot\BookService.class
+com\jtcindia\springboot\BookServiceImpl.class
+com\jtcindia\springboot\JTCWebConfig.class
